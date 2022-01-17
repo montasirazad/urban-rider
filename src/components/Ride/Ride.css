@@ -1,4 +1,8 @@
-.ride{
-    background-color: white;
-    text-align: center;
+.main{
+  margin-top: 50px;
+}
+
+.map img{
+    width: 600px;
+    height: auto;
 }

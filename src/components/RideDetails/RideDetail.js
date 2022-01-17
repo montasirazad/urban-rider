@@ -9,7 +9,7 @@ const RideDetail = (props) => {
         <div className="card d-flex rider-details" style={{width:'150px',padding:'30pX',margin:'15px'}}>
             <img className="card-img-top img-fluid" src={img} alt="Card image cap"/>
                 <div className="card-body">
-                    <Link style={{color:'#000000', textDecoration:'none'}} to={`/${name}`}><h5 className="text-center">{name}</h5></Link>
+                    <Link style={{color:'#000000', textDecoration:'none'}} to={'/ride'}><h5 className="text-center">{name}</h5></Link>
                 </div>
         </div>
     );
