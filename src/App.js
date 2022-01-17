@@ -1,6 +1,8 @@
 import { createContext, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import About from './components/About/About';
+import ConfirmRide from './components/ConfirmRide/ConfirmRide';
 import Home from './components/Home/Home';
 import LogIn from './components/LogIn/LogIn';
 import NotFound from './components/NotFound/NotFound';
@@ -24,6 +26,8 @@ function App() {
         <Route path='/home' element={<Home />} />
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<LogIn />} />
+        <Route path='/confirmRide' element={<ConfirmRide />} />
+        <Route path='/about' element={<About/>} />
          
         <Route path='/ride' element={<ProtectedRoute>
           <Ride />

@@ -1,46 +1,9 @@
 import React from 'react';
-import './RideChoice.css'
-import bike from '../../images/Frame.png';
-import bus from '../../images/Frame-1.png';
-import car from '../../images/Frame-2.png';
-import train from '../../images/Group.png';
+import rideChoiceData from '../FakeData/FakeData';
 import RideDetail from '../RideDetails/RideDetail';
+import './RideChoice.css';
 
-const rideChoiceData = [
-    {
-        name: 'Bike',
-        from: 'Khilgaon',
-        to: 'Dhanmondi',
-        person: 1,
-        fare: 120,
-        img: bike
-    },
-    {
-        name: 'Bus',
-        from: 'Khilgaon',
-        to: 'Dhanmondi',
-        person: 1,
-        fare: 20,
-        img: bus
-    },
-    {
-        name: 'Car',
-        from: 'Khilgaon',
-        to: 'Dhanmondi',
-        person: 4,
-        fare: 320,
-        img: car
-    },
-    {
-        name: 'Train',
-        from: 'shahbag',
-        to: 'uttora',
-        person: 1,
-        fare: 120,
-        img: train
-    }
-
-]
+ 
 
 const RideChoice = () => {
     return (

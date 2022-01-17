@@ -36,9 +36,7 @@ const Navbar = () => {
                     </li>
 
 
-                    <li className="nav-item me-3">
-                        <Link to='/about'><button type="button" className="btn btn-outline-primary">CONTACT</button></Link>
-                    </li>
+                  
 
                     {
                         user.email ? <li className="nav-item me-3">

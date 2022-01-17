@@ -1,12 +1,12 @@
-import React, { useContext } from 'react';
-import './login.css';
-import googleLogo from '../../images/googleLogo.png';
 import { initializeApp } from 'firebase/app';
-import firebaseConfig from '../../firebaseConfig/firebaseConfig';
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import Navbar from '../Shared/NavBar/Navbar';
+import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import React, { useContext } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 import { UserContext } from '../../App';
-import { Navigate, useNavigate, useParams } from 'react-router-dom';
+import firebaseConfig from '../../firebaseConfig/firebaseConfig';
+import googleLogo from '../../images/googleLogo.png';
+import Navbar from '../Shared/NavBar/Navbar';
+import './login.css';
 
 
 
@@ -27,7 +27,7 @@ const LogIn = () => {
                 // The signed-in user info.
                 const user = result.user;
                 const { displayName, photoURL, email } = user;
-                console.log(user);
+                // console.log(user);
                 const loggedInUser = {
                     name: displayName,
                     email: email,
