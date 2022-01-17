@@ -1,0 +1,16 @@
+.rider-details{
+
+}
+
+@media all and (max-width: 450px) {
+    .rider-details{
+       width: 40px;
+       height: 150px;
+       padding: 10px;  
+    }
+
+    .rider-details img{
+        height: 60px;
+    }
+
+    }
